@@ -25,19 +25,28 @@
                                     <segue destination="joB-7o-EUL" kind="show" id="4pG-gS-yz3"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-hy-Wk5">
+                                <rect key="frame" x="76" y="200" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="n88-CI-N2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="254" id="CJR-0A-yJm"/>
+                            <constraint firstItem="8Rl-hy-Wk5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="CiU-Lp-M4D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n88-CI-N2w" secondAttribute="trailing" constant="150" id="Rq3-mL-1gM"/>
+                            <constraint firstItem="8Rl-hy-Wk5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="U6Z-4F-sOC"/>
+                            <constraint firstItem="n88-CI-N2w" firstAttribute="top" secondItem="8Rl-hy-Wk5" secondAttribute="bottom" constant="81" id="XhP-hJ-k52"/>
                             <constraint firstItem="n88-CI-N2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="fUs-PX-MoL"/>
+                            <constraint firstItem="8Rl-hy-Wk5" firstAttribute="centerX" secondItem="n88-CI-N2w" secondAttribute="centerX" id="g6R-LT-rGI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n88-CI-N2w" secondAttribute="bottom" constant="340" id="tKQ-pW-GbP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Xcode and Git" id="wFc-Ud-VSk"/>
                     <connections>
                         <outlet property="btnAction" destination="n88-CI-N2w" id="NHC-EN-QRb"/>
+                        <outlet property="newView" destination="8Rl-hy-Wk5" id="Vm0-FQ-a1d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
