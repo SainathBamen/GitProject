@@ -17,12 +17,14 @@ class ViewController: UIViewController {
         newView.backgroundColor = .darkGray// second change.
         btnAction.titleLabel?.text = "Show Modal"
         navigationController?.title = "Xcode and Git" // first change...
-        btnAction.backgroundColor = UIColor .red
+        btnAction.backgroundColor = UIColor .blue
+        btnAction.tintColorDidChange()
         
     }
 
 
     @IBAction func btnAction(_ sender: UIButton) {
+        
 
         
         
