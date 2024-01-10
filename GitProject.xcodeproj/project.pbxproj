@@ -17,6 +17,7 @@
 		0415CA842B4E8C0300A919C4 /* GitProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415CA832B4E8C0300A919C4 /* GitProjectUITests.swift */; };
 		0415CA862B4E8C0300A919C4 /* GitProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415CA852B4E8C0300A919C4 /* GitProjectUITestsLaunchTests.swift */; };
 		044A0FE72B4E90850061D853 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A0FE62B4E90850061D853 /* SecondVC.swift */; };
+		044A0FE92B4E92E60061D853 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A0FE82B4E92E60061D853 /* ModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0415CA832B4E8C0300A919C4 /* GitProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitProjectUITests.swift; sourceTree = "<group>"; };
 		0415CA852B4E8C0300A919C4 /* GitProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		044A0FE62B4E90850061D853 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		044A0FE82B4E92E60061D853 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				0415CA622B4E8BFF00A919C4 /* AppDelegate.swift */,
 				0415CA642B4E8BFF00A919C4 /* SceneDelegate.swift */,
 				0415CA662B4E8BFF00A919C4 /* ViewController.swift */,
+				044A0FE82B4E92E60061D853 /* ModalView.swift */,
 				0415CA682B4E8BFF00A919C4 /* Main.storyboard */,
 				044A0FE62B4E90850061D853 /* SecondVC.swift */,
 				0415CA6B2B4E8C0200A919C4 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				0415CA632B4E8BFF00A919C4 /* AppDelegate.swift in Sources */,
 				044A0FE72B4E90850061D853 /* SecondVC.swift in Sources */,
 				0415CA652B4E8BFF00A919C4 /* SceneDelegate.swift in Sources */,
+				044A0FE92B4E92E60061D853 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

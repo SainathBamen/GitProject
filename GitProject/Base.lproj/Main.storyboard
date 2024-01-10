@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cer-L2-R1c">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Xcode and Git-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n88-CI-N2w">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n88-CI-N2w">
                                 <rect key="frame" x="150" y="409" width="93" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="goTo"/>
                                 <connections>
@@ -29,26 +28,32 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n88-CI-N2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="254" id="CJR-0A-yJm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n88-CI-N2w" secondAttribute="trailing" constant="150" id="Rq3-mL-1gM"/>
+                            <constraint firstItem="n88-CI-N2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="fUs-PX-MoL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n88-CI-N2w" secondAttribute="bottom" constant="340" id="tKQ-pW-GbP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Xcode and Git" id="wFc-Ud-VSk"/>
                     <connections>
                         <outlet property="btnAction" destination="n88-CI-N2w" id="NHC-EN-QRb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.74045801526717" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="1040.4580152671756" y="4.9295774647887329"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="cem-1g-JD3">
             <objects>
                 <viewController id="joB-7o-EUL" customClass="SecondVC" customModule="GitProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FGS-g3-1fI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn6-IZ-ZkN">
-                                <rect key="frame" x="66" y="271" width="253" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn6-IZ-ZkN">
+                                <rect key="frame" x="70" y="383" width="253" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,6 +61,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Zx-vQ-sdx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Zx-vQ-sdx" firstAttribute="bottom" secondItem="Yn6-IZ-ZkN" secondAttribute="bottom" constant="349" id="238-rP-a77"/>
+                            <constraint firstItem="Yn6-IZ-ZkN" firstAttribute="top" secondItem="5Zx-vQ-sdx" secondAttribute="top" constant="228" id="7Ta-TW-ZQ8"/>
+                            <constraint firstItem="5Zx-vQ-sdx" firstAttribute="trailing" secondItem="Yn6-IZ-ZkN" secondAttribute="trailing" constant="70" id="DTo-Hc-Aur"/>
+                            <constraint firstItem="Yn6-IZ-ZkN" firstAttribute="leading" secondItem="5Zx-vQ-sdx" secondAttribute="leading" constant="70" id="YJs-cZ-Xor"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="toc-lY-sPX"/>
                     <connections>
@@ -64,7 +75,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5x-iA-Vye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788.54961832061065" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="1715.2671755725189" y="4.9295774647887329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s9B-eh-7wL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cer-L2-R1c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8fr-VB-Mrh">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Js6-5E-5iq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNY-2z-HaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>
